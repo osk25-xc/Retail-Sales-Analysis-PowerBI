@@ -1,85 +1,62 @@
-# 📊 Retail Sales Analysis — Power BI Dashboard
+# Retail Sales Analysis | Power BI Dashboard
 
-An interactive **Retail Sales Analysis Dashboard** built using Microsoft Power BI to analyze sales performance, profitability, regional trends, and product performance.
+An interactive Power BI dashboard project for reviewing retail sales, profitability, order volume, product performance, and regional trends.
 
-## 🎯 Project Objective
+## Business Objective
+Present key sales KPIs in a single report and let users explore results by date, region, and category.
 
-The objective of this project is to analyze retail sales data and turn it into meaningful business insights that can support better decision-making.
+## Dashboard Features
+- Total Sales
+- Total Profit
+- Total Orders
+- Profit Margin %
+- Daily sales trend
+- Sales by category and region
+- Top products by sales
+- Interactive slicers for filtering
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
+- Power BI Desktop
+- Power Query for data preparation
+- DAX for measures
+- CSV / Excel source data
 
-- **Power BI Desktop** — Dashboard development and visualization
-- **Power Query** — Data cleaning and transformation
-- **DAX** — Measures and KPI calculations
-- **Microsoft Excel / CSV** — Dataset and data source
-
-## 📈 Dashboard Features
-
-- **Total Sales** — Overall sales performance
-- **Total Profit** — Business profitability
-- **Total Orders** — Unique order count
-- **Profit Margin %** — Profitability as a percentage of sales
-- **Sales Trend** — Daily sales performance over time
-- **Sales by Category** — Category-wise sales comparison
-- **Sales by Region** — Regional performance analysis
-- **Top 10 Products** — Best-performing products by sales
-- **Interactive Slicers** — Filter the dashboard by date, region, and category
-
-## 📐 Key DAX Measures
-
-### Total Sales
+## Example DAX Measures
 ```dax
 Total Sales = SUM('Retail_Sales_Analysis_Dataset'[Sales])
 ```
 
-### Total Profit
 ```dax
 Total Profit = SUM('Retail_Sales_Analysis_Dataset'[Profit])
 ```
 
-### Total Orders
 ```dax
 Total Orders = DISTINCTCOUNT('Retail_Sales_Analysis_Dataset'[Order ID])
 ```
 
-### Profit Margin %
 ```dax
 Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
 ```
 
-## 📂 Project Files
+Check that the table and column names match your model before using these measures.
 
-- `Retail_Sales_Analysis.pbix` — Power BI dashboard
-- `Retail_Sales_Analysis_Dataset.csv` — Dataset in CSV format
-- `Retail_Sales_Analysis_Dataset.xlsx` — Dataset in Excel format
+## How to Use
+1. Download the `.pbix` file and source dataset if included.
+2. Open the report in Power BI Desktop.
+3. Review KPI cards and charts.
+4. Use slicers to compare the selected periods, regions, and categories.
 
-## 🚀 How to Use
+## Business Questions
+- How are sales and profit trending over time?
+- Which categories and regions contribute most?
+- Which products lead sales?
+- How does profitability compare with sales volume?
 
-1. Download or clone this repository.
-2. Open `Retail_Sales_Analysis.pbix` using Power BI Desktop.
-3. If prompted, update the dataset file path to the downloaded CSV or Excel file.
-4. Refresh the data if required.
-5. Explore the dashboard using the available charts and slicers.
+## Notes
+This is a portfolio reporting project. Verify the files present in the repository and refresh the model if the source data changes. No real-company impact is claimed.
 
-## 💡 Business Insights
-
-This dashboard can help users:
-
-- Compare sales performance across regions and product categories.
-- Identify top-performing products.
-- Monitor profitability and profit margins.
-- Explore sales trends over time.
-- Support data-driven retail business decisions.
-
-## 👨‍💻 Author
-
-**Omkar S. Kshirsagar**
-
-Aspiring Data Analyst | SQL | Python | Excel | Power BI
-
-- GitHub: [osk25-xc](https://github.com/osk25-xc)
-- LinkedIn: [Omkar S. Kshirsagar](https://www.linkedin.com/in/omkar-s-kshirsagar-07298b2b1/)
+## Skills Demonstrated
+Power BI · Power Query · DAX · KPI design · Interactive dashboards · Business intelligence
 
 ---
-
-⭐ If you find this project useful, feel free to star this repository.
+Created by **Omkar S. Kshirsagar** | [GitHub Profile](https://github.com/osk25-xc)
